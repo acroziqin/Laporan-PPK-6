@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css" />
+  <script src="jquery/jquery.min.js"></script>
+  <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+  <title>Blank App</title>
+</head>
+
+<body data-role="page">
+  <h1 align="center"><a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a></h1>
+  <h3 align="center">Achmad Choirur Roziqin</h3>
+  <h4 align="center">(155150201111248)</h4>
+  <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+    <ul data-role="listview">
+      <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+      <li><a href="foto.html">Foto</a></li>
+      <li><a href="matakuliah.html">Mata Kuliah</a></li>
+    </ul>
+
+  </div>
+  <!-- /panel -->
+  <!-- /panel -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script>
+    $("#mypanel").trigger("updatelayout");
+
+  </script>
+</body>
+
+</html>
